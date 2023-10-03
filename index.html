@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        
+  <meta charset="utf-8">
+        <title>Лабораторная работа №1</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="onLoad()">
+        <div class="header">
+            <div class="name">
+                <p>Комягин Дмитрий Анатольевич, группа Р3232, вариант 1306</p>
+            </div>
+        </div>
+
+        <div class="grafic">
+            <div style="display: flex;">
+                <img src="2023-09-05_09-45-45.png" alt="график" id="img">
+            </div>
+            
+            <div id="table" style="overflow: auto;">
+            <table class="resultsTable" border="1" cellpadding="7" cellspacing="0" width="100%" >
+                <caption style="font: small-caps bold 22px/1 sans-serif;">Таблица результатов</caption>
+                <thead>
+                   <tr bgcolor="#D3EDF6">
+                        <th width="15%">X</th>
+                        <th width="15%">Y</th>
+                        <th width="15%">Радиус</th>
+                        <th width="15%">Текущее время</th>
+                        <th width="15%">Время выполнения</th>
+                        <th width="15%">Результат</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                </tbody>
+            </table> 
+            <ol><button type="button" id="clearTableButton" onclick="onClearButtonClicked()">Очистить таблицу</button></ol>           
+            </div>
+        </div>
+        <div class="units_area">
+            <form id="form_place">
+                <div id="Y_place">
+                    <p style="font: small-caps bold 22px/1 sans-serif;font-size: 22px;">Координаты Y</p>
+                    <input type="text" id="text_place" placeholder="Координаты Y">
+                </div>
+                
+                <div id="X_place">
+                    <p style="font: small-caps bold 22px/1 sans-serif;">Координаты X</p>
+                    <div>
+                        <input type="checkbox" class="checkbox_but" id="checkbox_-5" name="-5">
+                        <label for="checkbox_-5">-5</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox_but" id="checkbox_-4" name="-4">
+                        <label for="-4">-4</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox_but" id="checkbox_-3" name="-3">
+                        <label for="checkbox_-3">-3</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox_but" id="checkbox_-2" name="-2">
+                        <label for="checkbox_-2">-2</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox_but" id="checkbox_-1" name="-1">
+                        <label for="checkbox_-1">-1</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox_but" id="checkbox_0" name="0">
+                        <label for="checkbox_0">0</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox_but" id="checkbox_1" name="1">
+                        <label for="checkbox_1">1</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox_but" id="checkbox_2" name="2">
+                        <label for="checkbox_2">2</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="checkbox_but" id="checkbox_3" name="3">
+                        <label for="checkbox_3">3</label>
+                    </div>
+                </div>
+                <div id="R_place">
+                    <p style="font: small-caps bold 22px/1 sans-serif;">Координаты R</p>
+                    <div id="butten_place">
+                        <button type="button" class="solo_butten" id="button_1" name="1">1</button>
+                        <button type="button" class="solo_butten" id="button_2" name="1.5">1.5</button>
+                        <button type="button" class="solo_butten" id="button_3" name="2">2</button>
+                        <button type="button" class="solo_butten" id="button_4" name="2.5">2.5</button>
+                        <button type="button" class="solo_butten" id="button_5" name="3">3</button>
+                    </div>
+                </div>
+                <ol id="am"><input type="submit" id="submit_but" value="Отправить"></ol>
+            </form>
+        </div>
+    </body>
+</html>
